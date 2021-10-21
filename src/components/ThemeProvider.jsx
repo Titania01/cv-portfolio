@@ -17,7 +17,7 @@ export default function ThemeProvider({ children }) {
             <div className="pl-10">Contact</div>
           </div>
           <div
-            className={`pl-10 `}
+            className={`pl-10 cursor-pointer`}
             onClick={() => {
               theme == `light` ? setTheme(`dark`) : setTheme(`light`);
             }}
