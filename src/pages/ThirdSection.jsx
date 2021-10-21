@@ -32,7 +32,6 @@ const ThirdSection = () => {
   const handleCarouselClick = (el) => {
     setCarouselEL(el);
   };
-  console.log({ carouselEL });
   return (
     <div className="pl-[12.9375rem] pt-[12.9375rem] pr-[6.4375rem] begee3 dark:bg-[#1F2937E5] dark:bg-none ">
       <div className="text-lg font-normal">
@@ -55,16 +54,14 @@ const ThirdSection = () => {
         </div>
       </div>
 
-      <div className=" mt-28  h-[35rem]">
+      <div className=" mt-16  h-[35rem]">
         <Carousel
           ref={handleCarouselClick}
           swipeable={false}
           draggable={false}
-          showDots={true}
           responsive={responsive}
           customTransition="all .5"
           transitionDuration={500}
-          dotListClass="custom-dot-list-style"
           itemClass="margin-right"
           showDots={false}
           arrows={false}

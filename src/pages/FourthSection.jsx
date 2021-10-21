@@ -60,6 +60,11 @@ const FourthSection = () => {
           </div>
         </div>
       </div>
+      <div className="mt-32 mb-4 text-center last">
+        <p>
+          Copyright © 2021 <b>KEMI ANIKULAPO</b>{" "}
+        </p>
+      </div>
     </div>
   );
 };
