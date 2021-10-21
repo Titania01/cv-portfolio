@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ projectName }) => {
   return (
     <div style={{ marginRight: "3rem" }}>
       <div className="bg-white card dark:bg-[#1F2937]">
@@ -10,7 +10,7 @@ const Card = () => {
 
         <div className="pl-[2rem] pt-[2rem] ">
           <h2 className="text-2xl font-semibold dark:text-white">
-            Project Title
+            {projectName}
           </h2>
           <p className="pt-4 text-base font-normal colour dark:text-white">
             Fill your project brief here. It can be the outcome of the <br />

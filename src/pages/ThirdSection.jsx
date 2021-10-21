@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useState, Fragment } from "react";
 import Card from "../components/Card";
 import "./ThirdSection.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const ThirdSection = () => {
+  const [carouselEL, setCarouselEL] = useState({});
+  const projectNames = "Testify,Weater Forecast,Zonely,Fruitfy,Lasana".split(
+    ","
+  );
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 2,
+      items: 3,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -24,7 +29,10 @@ const ThirdSection = () => {
       items: 1,
     },
   };
-
+  const handleCarouselClick = (el) => {
+    setCarouselEL(el);
+  };
+  console.log({ carouselEL });
   return (
     <div className="pl-[12.9375rem] pt-[12.9375rem] pr-[6.4375rem] begee3 dark:bg-[#1F2937E5] dark:bg-none ">
       <div className="text-lg font-normal">
@@ -37,10 +45,10 @@ const ThirdSection = () => {
             <img src="/image/file.png" alt="" />
           </div>
           <div className="flex items-center pr-[13.75rem]">
-            <div className="mr-6 arrow">
+            <div className="mr-6 arrow" onClick={() => carouselEL.previous()}>
               <img src="/image/left-arr.svg" alt="" />
             </div>
-            <div className="arrow">
+            <div className="arrow" onClick={() => carouselEL.next()}>
               <img src="/image/right-arr.svg" alt="" />
             </div>
           </div>
@@ -49,37 +57,24 @@ const ThirdSection = () => {
 
       <div className=" mt-28  h-[35rem]">
         <Carousel
+          ref={handleCarouselClick}
           swipeable={false}
           draggable={false}
           showDots={true}
           responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
           itemClass="margin-right"
           showDots={false}
           arrows={false}
-          slidesToSlide={2}
+          // slidesToSlide={2}
         >
-          <>
-            1
-            <Card />
-          </>
-          <>
-            2
-            <Card />
-          </>
-          <Card />
-          <Card />
-          <Card />
+          {projectNames.map((item, itemIndex) => (
+            <Fragment key={`project-index-${itemIndex}`}>
+              <Card projectName={item} />
+            </Fragment>
+          ))}
         </Carousel>
       </div>
     </div>
