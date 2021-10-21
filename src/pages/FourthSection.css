@@ -1,0 +1,48 @@
+.begee4 {
+  background-image: url("../assets/bg4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  /* backdrop-filter: blur(150px); */
+  border-radius: 1rem;
+  height: 15.625rem;
+  width: 80.125rem;
+  /* padding-top: 13.625rem; */
+  margin-left: 12.9375rem;
+  margin-bottom: 5.8125rem;
+}
+
+.bg {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  width: 22.6875rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enve {
+  background: rgba(255, 255, 255, 0.5);
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.last-bg {
+  background: rgba(255, 255, 255, 0.5);
+  height: 3.5rem;
+  width: 30.75rem;
+  border: 1px solid#e5e7eb;
+  border-radius: 8px;
+}
