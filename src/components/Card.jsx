@@ -2,8 +2,8 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div>
-      <div className="card mr-[8rem]">
+    <div style={{ marginRight: "3rem" }}>
+      <div className="bg-white card dark:bg-[#1F2937]">
         <div className="flex items-center justify-center small-card">
           <img src="/image/garden.png" alt="" />
         </div>
@@ -17,7 +17,7 @@ const Card = () => {
             project, or some success metrics, or a cheesy tagline.
           </p>
         </div>
-        <div className="flex text-xs font-normal pt-[1.375rem] pl-[2rem]">
+        <div className="flex text-xs font-normal pb-4 pt-[1.375rem] pl-[2rem]">
           <span className="flex items-center justify-center">
             <p>Mobile App</p>
           </span>

@@ -2,14 +2,11 @@
   background-image: url("../assets/bg3.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card {
-  background: #ffffff;
-  height: 35.3125rem;
-  width: 38rem;
-  margin-top: 3rem;
+  width: 100%;
   border: 1px solid #ebe6e6;
   border-radius: 2rem;
   margin-bottom: 2rem;
@@ -18,9 +15,9 @@
 .small-card {
   background: #e1d9d9;
   height: 20rem;
-  width: 34rem;
+  width: 80%;
+  margin: auto;
   margin-top: 3rem;
-  margin-left: 2rem;
   border: 1px solid #ebe6e6;
   border-radius: 2rem;
 }
