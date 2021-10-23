@@ -1,8 +1,12 @@
 import React from "react";
+
 import RedArrow from "../components/RedArrow";
+import { portfolioEntity } from "../entities";
 import "./FourthSection.css";
 
 const FourthSection = () => {
+  const { theme } = portfolioEntity.use((currentState) => currentState);
+
   return (
     <div className="begee4 dark:bg-[#1F2937E5] dark:bg-none pt-[13.625rem]">
       <div className="flex items-center justify-between gradient pl-[3rem]">
@@ -22,19 +26,24 @@ const FourthSection = () => {
         </div>
       </div>
 
-      <div className="ml-[16.5rem] mr-[22.5rem]">
+      <div className="ml-[16.5rem] mr-[22.5rem] dark:text-white">
         <p className="pb-4">SOCIAL</p>
         <div className="flex items-center justify-between">
           <div>
             <div className="flex items-center pl-4 last-bg">
-              <img src="/image/github.svg" alt="" />
+              <img
+                src={`/image/${theme == `light` ? "github" : "sun-github"}.svg`}
+                alt=""
+              />
               <p className="pl-8 pr-[20rem]">Github</p>
               <RedArrow />
             </div>
           </div>
           <div>
             <div className="flex items-center pl-4 last-bg">
-              <img src="/image/linkdin.svg" alt="" />
+              <img
+                src={`/image/${theme == `light` ? "linkd" : "linkdin1"}.svg`}
+              />
               <p className="pl-8 pr-[20rem]">Linkedin</p>
               <RedArrow />
             </div>
@@ -45,24 +54,30 @@ const FourthSection = () => {
           <div className="flex items-center justify-between mt-10">
             <div>
               <div className="flex items-center pl-4 last-bg">
-                <img src="/image/pen.svg" alt="" />
+                <img
+                  src={`/image/${theme == `light` ? "pen" : "sun-pen"}.svg`}
+                  alt=""
+                />
                 <p className="pl-8 pr-[20rem]">Github</p>
                 <RedArrow />
               </div>
             </div>
             <div className="flex items-center pl-4 last-bg">
               <div className="flex">
-                <img src="/image/bird.svg" alt="" />
-                <p className="pl-8 pr-[20rem]">Linkedin</p>
+                <img
+                  src={`/image/${theme == `light` ? "bird" : "sun-bird"}.svg`}
+                  alt=""
+                />
+                <p className="pl-8 pr-[20rem]">Twitter</p>
                 <RedArrow />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-32 mb-4 text-center last">
-        <p>
-          Copyright © 2021 <b>KEMI ANIKULAPO</b>{" "}
+      <div className="mt-32 mb-4 text-center last bg-none dark:bg-[#1F2937E5]">
+        <p className=" dark:text-white">
+          Copyright © 2021 <b>KEMI ANIKULAPO</b>
         </p>
       </div>
     </div>

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { portfolioEntity, setTheme } from "../entities";
 import "./Navbar.css";
 
 export default function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(`light`);
+  // const [theme, setTheme] = useState(`light`);
+  const theme = portfolioEntity.use((currentState) => currentState.theme);
 
   return (
     <div id="theme-wrapper" className={`${theme}`}>

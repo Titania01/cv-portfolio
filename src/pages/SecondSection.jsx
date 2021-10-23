@@ -1,4 +1,5 @@
 import React from "react";
+import Pointer from "../components/Pointer";
 import "./SecondSection.css";
 
 const SecondSection = () => {
@@ -19,7 +20,44 @@ const SecondSection = () => {
           iaculis leo.{" "}
         </p>
 
-        <div></div>
+        <div className="grid grid-cols-4 mt-12 dark:text-white">
+          <div className="space-y">
+            <h2 className="text-[#1f2937] dark:text-white font-bold text-[1.5rem]">
+              Languages
+            </h2>
+            <div className="flex items-center pt-4">
+              <Pointer />
+              <p className="ml-8">HTML</p>
+            </div>
+            <div className="flex items-center pt-4">
+              <Pointer />
+              <p className="ml-8">CSS</p>
+            </div>
+            <div className="flex items-center pt-4">
+              <Pointer />
+              <p className="ml-8">JAVASCRIPT</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2 className="text-[#1f2937] dark:text-white font-bold text-[1.5rem]">
+                Languages
+              </h2>
+              <div className="flex items-center pt-4">
+                <Pointer />
+                <p className="ml-8">HTML</p>
+              </div>
+              <div className="flex items-center pt-4">
+                <Pointer />
+                <p className="ml-8">CSS</p>
+              </div>
+              <div className="flex items-center pt-4">
+                <Pointer />
+                <p className="ml-8">JAVASCRIPT</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

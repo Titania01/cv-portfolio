@@ -10,7 +10,8 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-multi-carousel": "^2.6.5",
-    "react-responsive-carousel": "^3.2.22"
+    "react-responsive-carousel": "^3.2.22",
+    "simpler-state": "^1.0.3"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.0",

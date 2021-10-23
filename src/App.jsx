@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from "./pages/Navbar";
 import "./App.css";
 import FirstSection from "./pages/FirstSection";
 import SecondSection from "./pages/SecondSection";
