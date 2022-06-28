@@ -75,7 +75,7 @@ const FourthSection = () => {
           </div>
         </div>
       </div>
-      <div className="mt-32 mb-4 text-center last bg-none dark:bg-[#1F2937E5]">
+      <div className="mt-32 mb-4 text-center last bg-none">
         <p className=" dark:text-white">
           Copyright © 2021 <b>KEMI ANIKULAPO</b>
         </p>

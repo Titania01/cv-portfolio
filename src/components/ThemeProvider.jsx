@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { portfolioEntity, setTheme } from "../entities";
-import "./Navbar.css";
+// import "./Navbar.css";
 
 export default function ThemeProvider({ children }) {
   // const [theme, setTheme] = useState(`light`);
